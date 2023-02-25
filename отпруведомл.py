@@ -67,11 +67,11 @@ def get_text_messages(message):
     if message.text == 'Мотиватор':
         bot.send_message(message.from_user.id, 'Введи команду /nap !', parse_mode='Markdown')
     elif message.text == 'Расписание':
-       bot.send_message(message.from_user.id, "Привет, какой класс тебя интересует?")
-       bot.register_next_step_handler(message,klass)
+        bot.send_message(message.from_user.id, "Привет, какой класс тебя интересует?")
+        bot.register_next_step_handler(message,klass)
     elif message.text == '/stop':
-       bot.send_message(message.from_user.id, "Введи еще раз /stop и напоминание отключено! Вы молодец =)")
-       bot.register_next_step_handler(message,stopping)
+        bot.send_message(message.from_user.id, "Введи еще раз /stop и напоминание отключено! Вы молодец =)")
+        bot.register_next_step_handler(message,stopping)
     else:
         bot.send_message(message.from_user.id, "Чтобы получить уроки, напиши: Расписание")
 
