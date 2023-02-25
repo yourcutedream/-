@@ -60,7 +60,7 @@ def start(message):
     item2 = types.KeyboardButton('Мотиватор')
 
     markup.add(item1, item2)
-    bot.send_message(message.chat.id, 'Приветствую, Хомосапиенс! Что Вам угодно?\n\nБот умеет:\n/start - начала использование бота, главное меню\n/nap - функция мотивации, вывод любого сообщения через заданный промежуток\n/stop - останавливает функцию напоминания(нужно написать 2 раза)\nРасписание - выдает расписание на любой день', parse_mode='Markdown', reply_markup=markup)#ответ бота
+    bot.send_message(message.chat.id, 'Приветствую, Хомосапиенс! Что Вам угодно?\n\nБот умеет:\n/start - начало использования бота, главное меню\n/nap - функция мотивации, вывод любого сообщения через заданный промежуток\n/stop - останавливает функцию напоминания(нужно написать 2 раза)\nРасписание - выдает расписание на любой день', parse_mode='Markdown', reply_markup=markup)#ответ бота
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
